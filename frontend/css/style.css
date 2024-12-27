@@ -1,0 +1,27 @@
+html    {
+    @font-face {
+        font-family: 'PT Sans';
+        src: url('frontend/assets/font/PTSans-Regular.ttf') format('truetype');
+    }
+}
+
+body    {
+    font-family: PT Sans, Verdana, Arial, sans-serif;
+}
+
+main    {
+    background-image: url('../assets/img/background.jpg');
+}
+
+.container  {
+    text-align: center;
+}
+
+.logo   {
+    width: 25rem;
+    height: 25rem;
+}
+
+h1  {
+    font-size: 5rem;
+}
