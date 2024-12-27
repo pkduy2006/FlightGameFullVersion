@@ -1,0 +1,55 @@
+html, body, main {
+    height: 100%;
+    margin: 0;
+}
+
+html    {
+    @font-face {
+        font-family: 'PT Sans';
+        src: url('frontend/assets/font/PTSans-Regular.ttf') format('truetype');
+    }
+}
+
+body    {
+    font-family: PT Sans, Verdana, Arial, sans-serif;
+}
+
+main    {
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container  {
+    text-align: center;
+}
+
+figure  {
+    margin: 0;
+}
+
+.logo   {
+    padding: 5rem 0 0 0;
+    width: 25rem;
+    height: 25rem;
+}
+
+h1  {
+    font-size: 5rem;
+}
+
+.buttons    {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 2rem;
+}
+
+.story-img  {
+    max-width: 100%;
+}

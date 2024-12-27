@@ -1,0 +1,56 @@
+body    {
+    margin: 0;
+    background-color: #333333;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+}
+
+article {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    max-width: 50%;
+    border: 2px solid white;
+}
+
+h1  {
+    padding: 2rem 0 2rem 0;
+    font-size: 2rem;
+    margin: 0;
+}
+
+figure  {
+    margin: 0;
+}
+
+p {
+    text-align: left;
+    text-indent: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.buttons    {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
