@@ -4,52 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steel Skies</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
     <link rel="icon" type="image/jpg" href="assets/img/websiteLogo.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/game.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div>Fuel: </div>
             <div>ODO: </div>
-            <div>Time: </div>
-            <div>Date: </div>
+            <div id="time">Time: </div>
+            <div id="date">Date: </div>
         </div>
     </header>
     <main>
         <div id="map"></div>
     </main>
-    <aside>
-        <div id="information-panel">
-            <div id="player">
-                <div>Name: </div>
-                <div>Mission completed: </div>
-                <div>Bonus: </div>
-                <div>Eliminations: </div>
+    <section>
+        <div class="information-panel">
+            <div class="player">
+                <p>Name: </p>
+                <p>Mission completed: </p>
+                <p>Bonus: </p>
+                <p>Eliminations: </p>
             </div>
-            <div id="base">
-                <div>Name: </div>
-                <div>Municipality: </div>
-                <div>Country: </div>
+            <div class="base">
+                <p>Name: </p>
+                <p>Municipality: </p>
+                <p>Country: </p>
             </div>
-            <div id="target">
-                <div>Name: </div>
-                <div>Municipality: </div>
-                <div>Country: </div>
+            <div class="target">
+                <p>Name: </p>
+                <p>Municipality: </p>
+                <p>Country: </p>
             </div>
-            <div id="location">
-                <div>Name: </div>
-                <div>Municipality: </div>
-                <div>Country: </div>
+            <div class="location">
+                <p>Name: </p>
+                <p>Municipality: </p>
+                <p>Country: </p>
             </div>
-            <div id="weather">
-                <div>Temperature: </div>
-                <div>Wind speed: </div>
-                <div>Wind direction by degree: </div>
-                <div>Wind direction: </div>
+            <div class="weather">
+                <p>Temperature: </p>
+                <p>Wind speed: </p>
+                <p>Wind direction by degree: </p>
+                <p>Wind direction: </p>
             </div>
         </div>
-    </aside>
+    </section>
 </body>
 </html>

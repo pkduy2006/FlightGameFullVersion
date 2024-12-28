@@ -1,0 +1,46 @@
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 5rem;
+}
+
+header {
+    border: 1px solid #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 0;
+}
+
+#map {
+    height: 40rem;
+    border: 1px solid #fff;
+}
+
+aside   {
+    padding: 2rem;
+    border-top: 1px solid #fff;
+}
+
+.information-panel {
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-start;
+    font-size: 1rem;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.player, .base, .target, .location, .weather {
+    width: 20%;
+}
+
+.base, .target, .location, .weather {
+    border-left: 1px solid #fff;
+    padding-left: 1rem;
+}
