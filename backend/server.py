@@ -18,4 +18,4 @@ connection = mysql.connector.connect(
 
 @app.route('/setup')
 def setup():
-    sql = """SELECT airport.name as """
+    sql = """SELECT airport.name as name, airport.iso_country """

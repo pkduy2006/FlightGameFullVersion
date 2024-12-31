@@ -1,82 +1,90 @@
-CREATE TABLE stronghold
+CREATE TABLE saved_stronghold
 (
     id  INT AUTO_INCREMENT,
-    user_id INT NULL,
-    name    VARCHAR(40) NULL,
-    iso     VARCHAR(40) NULL,
-    address    VARCHAR(40)    NULL,
-    icao    VARCHAR(40) NULL,
-    lat DOUBLE NULL,
-    lon DOUBLE NULL,
-    type    VARCHAR(40) NULL,
-    troops  INT NULL,
-    PRIMARY KEY (id)
+    user_id INT,
+    name    VARCHAR(40),
+    iso     VARCHAR(40),
+    address    VARCHAR(40),
+    icao    VARCHAR(40),
+    lat DOUBLE,
+    lon DOUBLE,
+    type    VARCHAR(40),
+    troops  INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
 )
-    DEFAULT CHARSET = utf8mb4
-    COLLATE = utf8mb4_unicode_ci;
+    DEFAULT CHARSET = latin1;
 
-CREATE TABLE depot
+CREATE TABLE saved_depot
 (
     id INT AUTO_INCREMENT,
-    user_id INT NULL,
-    name    VARCHAR(40) NULL,
-    iso VARCHAR(40) NULL,
-    address VARCHAR(40) NULL,
-    icao    VARCHAR(40) NULL,
-    lat DOUBLE NULL,
-    lon DOUBLE NULL,
-    type    VARCHAR(40) NULL,
-    reserves    INT NULL,
-    PRIMARY KEY (id)
+    user_id INT,
+    name    VARCHAR(40),
+    iso VARCHAR(40),
+    address VARCHAR(40),
+    icao    VARCHAR(40),
+    lat DOUBLE,
+    lon DOUBLE,
+    type    VARCHAR(40),
+    reserves    INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
 )
-    DEFAULT CHARSET = utf8mb4
-    COLLATE = utf8mb4_unicod_ci;
+    DEFAULT CHARSET = latin1;
 
 
-CREATE TABLE abandoned
+CREATE TABLE saved_abandoned
 (
     id INT AUTO_INCREMENT,
-    user_id INT NULL,
-    name    VARCHAR(40) NULL,
-    iso VARCHAR(40) NULL,
-    address VARCHAR(40) NULL,
-    icao    VARCHAR(40) NULL,
-    lat DOUBLE NULL,
-    lon DOUBLE  NULL,
-    type    VARCHAR(40) NULL,
-    PRIMARY KEY (id)
+    user_id INT,
+    name    VARCHAR(40),
+    iso VARCHAR(40),
+    address VARCHAR(40),
+    icao    VARCHAR(40),
+    lat DOUBLE,
+    lon DOUBLE,
+    type    VARCHAR(40),
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
 )
-    DEFAULT CHARESE = utf8mb4
-    COLLATE = utf8mb4_unicode_ci;
+    DEFAULT CHARSET = latin1;
 
-CREATE TABLE base
+CREATE TABLE saved_base
 (
     id INT AUTO_INCREMENT,
-    user_id INT NULL,
-    name    VARCHAR(40) NULL,
-    iso VARCHAR(40) NULL,
-    address VARCHAR(40) NULL,
-    icao    VARCHAR(40) NULL,
-    lat DOUBLE NULL,
-    lon DOUBLE  NULL,
-    type    VARCHAR(40) NULL,
-    PRIMARY KEY (id)
+    user_id INT,
+    name    VARCHAR(40),
+    iso VARCHAR(40),
+    address VARCHAR(40),
+    icao    VARCHAR(40),
+    lat DOUBLE,
+    lon DOUBLE,
+    type    VARCHAR(40),
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
 )
-    DEFAULT CHARESE = utf8mb4
-    COLLATE = utf8mb4_unicode_ci;
+    DEFAULT CHARSET = latin1;
 
-CREATE TABLE target
+CREATE TABLE saved_target
 (
     id INT AUTO_INCREMENT,
-    user_id INT NULL,
-    name    VARCHAR(40) NULL,
-    iso VARCHAR(40) NULL,
-    address VARCHAR(40) NULL,
-    icao    VARCHAR(40) NULL,
-    lat DOUBLE NULL,
-    lon DOUBLE  NULL,
-    type    VARCHAR(40) NULL,
+    user_id INT,
+    name    VARCHAR(40),
+    iso VARCHAR(40),
+    address VARCHAR(40),
+    icao    VARCHAR(40),
+    lat DOUBLE,
+    lon DOUBLE,
+    type    VARCHAR(40),
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
+)
+    DEFAULT CHARSET = latin1;
+
+CREATE TABLE user
+(
+    id INT AUTO_INCREMENT,
+    name VARCHAR(40),
     PRIMARY KEY (id)
 )
-    DEFAULT CHARESE = utf8mb4
-    COLLATE = utf8mb4_unicode_ci;
+    DEFAULT CHARSET = latin1;
