@@ -7,7 +7,8 @@ CREATE TABLE monument
     PRIMARY KEY (id),
     FOREIGN KEY (location) REFERENCES airport (ident)
 )
-    DEFAULT CHARSET = latin1;
+    DEFAULT CHARSET = utf8mb4
+    COLLATE utf8mb4_unicode_ci;
 
 INSERT INTO monument(name, location, eliminations)
 VALUES  ('Linh', 'VVNB', 13420),

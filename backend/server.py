@@ -15,3 +15,7 @@ connection = mysql.connector.connect(
     password = '16102006',
     autocommit = True
 )
+
+@app.route('/setup')
+def setup():
+    sql = """SELECT airport.name as """
