@@ -1,9 +1,9 @@
 class Airport:
-    def __init__(self, name, iso, address, icao, lat, lon, type):
+    def __init__(self, name, iso_country, address, ident, lat, lon, type):
         self.name = name
-        self.iso = iso
+        self.iso_country = iso_country
         self.address = address
-        self.icao = icao
+        self.ident = ident
         self.lat = lat
         self.lon = lon
         self.type = type
