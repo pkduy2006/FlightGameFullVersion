@@ -39,8 +39,3 @@ aside   {
 .player, .base, .target, .location, .weather {
     width: 20%;
 }
-
-.base, .target, .location, .weather {
-    border-left: 1px solid #fff;
-    padding-left: 1rem;
-}

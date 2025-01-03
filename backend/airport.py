@@ -1,31 +1,31 @@
 class Airport:
-    def __init__(self, name, iso_country, address, ident, lat, lon, type):
+    def __init__(self, name, iso_country, municipality, country, ident, latitude_deg, longitude_deg):
         self.name = name
         self.iso_country = iso_country
-        self.address = address
+        self.municipality = municipality
+        self.country = country
         self.ident = ident
-        self.lat = lat
-        self.lon = lon
-        self.type = type
+        self.latitude_deg = latitude_deg
+        self.longitude_deg = longitude_deg
 
 class Stronghold(Airport):
-    def __init__(self, name, iso, address, icao, lat, lon, type, troops):
+    def __init__(self, name, iso_country, municipality, country, ident, latitude_deg, longitude_deg, troops):
         self.troops = troops
-        super().__init__(name, iso, address, icao, lat, lon, type)
+        super().__init__(name, iso_country, municipality, country, ident, latitude_deg, longitude_deg)
 
 class Depot(Airport):
-    def __init__(self, name, iso, address, icao, lat, lon, type, reserves):
+    def __init__(self, name, iso_country, municipality, country, ident, latitude_deg, longitude_deg, reserves):
         self.reserves = reserves
-        super().__init__(name, iso, address, icao, lat, lon, type)
+        super().__init__(name, iso_country, municipality, country, ident, latitude_deg, longitude_deg)
 
 class Abandoned(Airport):
-    def __init__(self, name, iso, address, icao, lat, lon, type):
-        super().__init__(name, iso, address, icao, lat, lon, type)
+    def __init__(self, name, iso_country, municipality, country, ident, latitude_deg, longitude_deg):
+        super().__init__(name, iso_country, municipality, country, ident, latitude_deg, longitude_deg)
 
 class Base(Airport):
-    def __init__(self, name, iso, address, icao, lat, lon, type):
-        super().__init__(name, iso, address, icao, lat, lon, type)
+    def __init__(self, name, iso_country, municipality, country, ident, latitude_deg, longitude_deg):
+        super().__init__(name, iso_country, municipality, country, ident, latitude_deg, longitude_deg)
 
 class Target(Airport):
-    def __init__(self, name, iso, address, icao, lat, lon, type):
-        super().__init__(name, iso, address, icao, lat, lon, type)
+    def __init__(self, name, iso_country, municipality, country, ident, latitude_deg, longitude_deg):
+        super().__init__(name, iso_country, municipality, country, ident, latitude_deg, longitude_deg)
